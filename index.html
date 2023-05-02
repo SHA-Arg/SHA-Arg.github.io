@@ -31,7 +31,7 @@
 		<!--  BARRA DE NAVEGACION -->
 		<nav class="nav">
 			<div class="nav__container">
-				<h1 class="nav__logo">S.H.A. Dev.</h1>
+				<h1 class="nav__logo">S. H. A.</h1>
 				<label for="menu" class="nav__label">
 					<img
 						src="../assets/img/icons/command-line.png"
@@ -63,80 +63,94 @@
 		</section>
 
 		<!-- Datos personales -->
+
 		<div class="containerDatos">
 			<h1 class="datos-h1" id="datos">Datos personales</h1>
-			<ul clase="containerDatos" id="lista-datos">
-				<img
-					id="foto-perfil"
-					src="../assets/img/team1.jpg"
-					alt="fotoPersonal" />
-				<li><b>Sebastian Hereñu Amaral</b></li>
-				<li><b>Edad:</b>38 años</li>
-				<li><b>Fecha de nacimiento:</b>27/12/1984</li>
-				<li><b>Estado civil:</b> Soltero</li>
-				<li><b>Telefono:</b> 11-1234-5678</li>
-				<li><b>Email de contacto:</b> hereniu.amaral.sebastian@gmail.com </li>
-			</ul>
+			<div class="container col-xxl-8 px-4 py-5">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+					<div class="col-10 col-sm-8 col-lg-6">
+						<img
+							id="foto-perfil"
+							src="./assets/img/fotoPerfil.jpg"
+							alt="fotoPersonal" />
+					</div>
+					<div class="col-lg-6">
+						<h1 class="display-5 fw-bold lh-1 mb-3">Sebastian Hereñu Amaral</h1>
+						<ul clase="containerDatos" id="lista-datos">
+							<li><b>Ciudad:</b>Wilde, Avellaneda</li>
+							<li><b>Estado civil:</b> Soltero</li>
+							<li><b>Telefono:</b> 11-1234-5678</li>
+							<li><b>Email:</b> hereniu.amaral.sebastian@gmail.com </li>
+						</ul>
+						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+								>CONTACTAME</button
+							>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Experiencia -->
 		<div class="containerExperiencia">
 			<h1 class="experiencia-h1" id="experiencia">Experiencia</h1>
-			<!-- Tarjeta 1 -->
-			<div class="container-cards">
-				<div class="marca"
-					><img
+			<div class="containerTarjetas">
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront"><img
 						width="200px"
 						height="200px"
 						class="rounded"
 						src="../assets/img/experiencia/OnaSaez.jfif"
 						alt="Logo Ona Saez"
 				/></div>
-				<div class="text"
-					><p class="text"
+						<div class="theBack"
+							><p class="text"
 						>Cajero/Vendedor<br />
 						Aptitudes: Liderazgo · Trabajo en equipo · Ventas<br />
 						Ene. 2004 - Ago. 2007 ·
 					</p></div
-				>
-			</div>
-			<!-- Tarjeta 2 -->
-			<div class="container-cards">
-				<div class="marca"
-					><img
+						>
+					</div>
+					<div class="containerTarjetas">
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront"><img
 						width="200px"
 						height="200px"
 						class="rounded"
 						src="../assets/img/experiencia/CristobalColon.jpg"
 						alt="Logo Cristobal Colon"
 				/></div>
-				<div class="text"
-					><p class="text"
+						<div class="theBack"
+							><p class="text"
 						>Cajero Vendedor/Encargado<br />
 						Aptitudes: Liderazgo · Trabajo en equipo · Ventas<br />
 						Ago. 2007 - May. 2012
+					</p>
 					</p></div
-				>
-			</div>
-
-			<!-- Tarjeta 3 -->
-			<div class="container-cards">
-				<div class="marca"
-					><img
+						>
+					</div>
+					<div class="containerTarjetas">
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront"><img
 						width="200px"
 						height="200px"
 						class="rounded"
 						src="../assets/img/experiencia/Quiksilver.jpg"
 						alt="Logo Quiksilver"
 				/></div>
-				<div class="text"
-					><p class="text"
+						<div class="theBack"
+							><p class="text"
 						>Vendedor<br />
 						Aptitudes: Liderazgo · Trabajo en equipo · Ventas<br />
 						Sept. 2013 - Ene. 2018
 					</p></div
-				>
-			</div>
+						>
+					</div>
+				</div>
 		</div>
 
 		<!-- Formacion -->
@@ -203,6 +217,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<!-- Scripts Locales JS -->
 		<script src="../js/carousel.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="../js/menu.js"></script>
 		<!-- Importacion de Bootstrap JS -->
 		<script
