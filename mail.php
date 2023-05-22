@@ -10,16 +10,17 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/Exception.php';
 
 
-$nombre = $_POST['nombre'];
+$nombre = $_POST['name'];
 $email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
+$mensaje = $_POST['message'];
+$telefono = $_POST['phone'];
 
 if (empty(trim($nombre))) $nombre = "Anónimo";
 if (empty(trim($asunto))) $asunto = "Sin asunto";
 
 $body = <<< HTML
-<h1>Consulta desde la Web</h1>
-<p>De: $nombre / $email</p>
+<h1>Consulta desde la Web:</h1>
+<p>De: $nombre / $email / $telefono</p>
 <h1>Mensaje:</h1>
 $mensaje
 HTML;
