@@ -58,8 +58,13 @@ body {
 	margin-bottom: 0;
 	font-size: 1.5rem;
 	font-weight: 900;
+<<<<<<< HEAD:css/estilos.css
 	color: rgb(232, 238, 232);
 	text-shadow: 4px 4px 2px rgba(230, 222, 222, 0.6);
+=======
+	margin-top: 0;
+	margin-bottom: 0;
+>>>>>>> Solucion:Old/css/estilos.css
 }
 .nav__menu {
 	display: grid;
@@ -166,6 +171,12 @@ nav.active a {
 	align-items: left;
 	flex-direction: column;
 	height: max-content;
+}
+.container_izquerda {
+	display: flex;
+	align-items: left;
+	flex-direction: column;
+	max-width: 50%;
 }
 #lista-datos {
 	display: flex;
@@ -324,7 +335,6 @@ h2 {
 	padding-bottom: 10px;
 	width: 180px;
 	color: #78788c;
-	border-bottom: 3px solid #78788c;
 }
 input {
 	width: 100%;
