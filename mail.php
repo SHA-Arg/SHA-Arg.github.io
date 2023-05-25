@@ -34,4 +34,4 @@ $rta = $mailer->send();
 
 var_dump($rta);
 
-header('Location: projecto.html');
+header('Location: index.html');
