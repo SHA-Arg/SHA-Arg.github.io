@@ -451,6 +451,10 @@ legend + * {
 	clear: left;
 }
 
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* make scrollbar transparent */
+}
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
@@ -3877,6 +3881,7 @@ fieldset:disabled .btn {
 	--bs-navbar-toggler-focus-width: 0.25rem;
 	--bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -4334,7 +4339,9 @@ fieldset:disabled .btn {
 }
 
 .card-body {
+	background-color: grey;
 	flex: 1 1 auto;
+	align-self: flex-end;
 	padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 	color: var(--bs-card-color);
 }
