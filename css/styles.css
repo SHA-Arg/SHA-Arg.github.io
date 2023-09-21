@@ -128,6 +128,7 @@ h1,
 	margin-bottom: 0.5rem;
 	font-weight: 500;
 	line-height: 1.2;
+	text-align: center;
 }
 
 h1,
@@ -2361,6 +2362,11 @@ textarea.form-control-lg {
 .form-check-inline {
 	display: inline-block;
 	margin-right: 1rem;
+}
+
+.btn_profile {
+	display: inline-block;
+	align-items: center;
 }
 
 .btn-check {
