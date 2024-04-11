@@ -1,4 +1,4 @@
 // Usar este con Jquery
-$("#botonQuieroCerrarMenuDesdeAfuera").click(function (event) {
+$("#").click(function (event) {
 	closeNav();
 });

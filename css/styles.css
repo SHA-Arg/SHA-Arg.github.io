@@ -62,7 +62,7 @@
 	--bs-body-font-weight: 400;
 	--bs-body-line-height: 1.5;
 	--bs-body-color: #212529;
-	--bs-body-bg: #fff;
+	--bs-body-bg: rgba(17, 17, 17, 0.767);
 	--bs-border-width: 1px;
 	--bs-border-style: solid;
 	--bs-border-color: #dee2e6;
@@ -1977,7 +1977,7 @@ progress {
 }
 
 @media (max-width: 575.98px) {
-	.table-responsive-sm {
+	.table-responsive-xs {
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
 	}
