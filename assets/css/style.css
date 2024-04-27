@@ -782,7 +782,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	/* Section: Hello */
 	.section-hello .row {
 		margin-top: 30px;
