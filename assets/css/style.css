@@ -67,7 +67,7 @@ body {
 .btn:hover,
 .btn:focus {
 	color: #ffffff;
-	background-color: transparent;
+	background-color: #298ce9;
 	border-color: #ffffff;
 }
 
