@@ -6769,7 +6769,7 @@ button.close {
 	z-index: 15;
 	width: 60%;
 	padding-left: 0;
-	margin-left: -30%;
+	margin-left: 20%;
 	text-align: center;
 	list-style: none;
 }
@@ -6780,7 +6780,7 @@ button.close {
 	margin: 1px;
 	text-indent: -999px;
 	cursor: pointer;
-	background-color: #000\9;
+	background-color: #0009;
 	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid #fff;
 	border-radius: 10px;
@@ -6830,7 +6830,7 @@ button.close {
 		padding-bottom: 30px;
 	}
 	.carousel-indicators {
-		bottom: 20px;
+		bottom: 30px;
 	}
 }
 .btn-group-vertical > .btn-group:after,
