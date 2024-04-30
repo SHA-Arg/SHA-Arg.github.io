@@ -35,6 +35,9 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 
 /* 
  * Background colors 
@@ -76,6 +79,15 @@ body {
 	color: #ffffff;
 	background-color: #196fc2;
 	border-color: #196fc2;
+}
+
+/* 
+ * texto cerca de mi
+ */
+.text-about {
+	font-family: "Varela", sans-serif;
+	font-size: 16px;
+	color: #000;
 }
 
 /* 
