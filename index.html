@@ -2,23 +2,17 @@
 <html lang="en">
 
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>S. H. A. Portfolio</title>
-
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
-
     <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
@@ -26,15 +20,10 @@
     <link rel="manifest" href="assets/img/manifest.json">
     <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-
     <link rel="stylesheet" href="assets/css/style.css">
-
-
 </head>
 
 <body>
@@ -44,11 +33,9 @@
             <h1>Soy Sebastian Hereñu Amaral</S></h1>
             <p class="hero-job"><span>DESARROLLADOR FULLSTACK</span></p>
         </div>
-
         <div class="hero-arrow page-scroll home-arrow-down">
             <a class="" href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
         </div>
-
     </div>
     <header id="masthead" class="site-header">
         <nav id="primary-navigation" class="site-navigation" data-spy="affix">
@@ -341,7 +328,7 @@
 
                 <div class="portfolio">
                     <ul class="portfolio-sorting list-inline">
-                        <li><a href="#" class=" active" data-group="all">Algunos de Mis Codigos</a></li>
+                        <li><a href="#" class=" active" data-group="all">Mis Codigos</a></li>
                         <!-- <li><a href="#" class="" data-group="webdesign">Desarrollo Web</a></li>
                         <li><a href="#" class="" data-group="webdev">Desarrollo</a></li>
                         <li><a href="#" class="" data-group="mobileapps">App's</a></li> -->
@@ -359,7 +346,7 @@
                                     </a>
                                 </div>
                                 <div class="portfolio-info">
-                                    <h3>Mi Reposito</h3>
+                                    <h3>Mi Repositorio</h3>
                                     <p>GitHub</p>
                                 </div>
                             </div>
@@ -408,32 +395,42 @@
         <!-- End Quote section -->
 
         <!-- Contacto -->
-        <section class="site-section section-contact" id="contact">Procesamiento de datos con Python
+        <section class="site-section section-contact" id="contact">
             <div class="container">
                 <h2>CONTACTAME</h2>
                 <p class="section-subtitle"><span>Aqui estoy</span></p>
                 <div class="row">
                     <form id="contactForm" method="post" action="mail.php">
                         <div class="col-md-4">
-                            <input class="form-control" id="name" type="text" placeholder="Nombre" required>
+                            <input class="form-control" id="nombre" type="text" placeholder="Nombre"
+                                autocapitalize="words" autocomplete="off" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" id="email" type="email" placeholder="Email" required>
+                            <input class="form-control" id="correo" type="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <span>Asunto: </span>
+                            <select name="asunto" id="">
+                                <option value="Consulta">Consulta</option>
+                                <option value="Sugerencia">Sugerencia</option>
+                                <option value="Empleo">Empleo</option>
+                                <option value="Otro">Otro</option>
+                            </select>
                         </div>
                         <div class="col-sm-12">
                             <textarea class="form-control" id="message" type="text" placeholder="Tu mensaje"
                                 required></textarea>
                         </div>
                         <!-- ENVIAR MENSAJE DE EXITO -->
-                        <div class="d-none" id="submitSuccessMessage">
+                        <!-- <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Envío de formulario exitoso!</div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- ENVIAR MENSAJE DE ERROR -->
-                        <div class="d-none" id="submitErrorMessage">
+                        <!-- <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
+                        </div> -->
 
                         <div class="col-sm-12">
                             <button class="btn btn-inverted" id="submitButton" type="submit">ENVIAR</button>
