@@ -400,13 +400,14 @@
                 <h2>CONTACTAME</h2>
                 <p class="section-subtitle"><span>Aqui estoy</span></p>
                 <div class="row">
-                    <form id="contactForm" method="post" action="mail.php">
+                    <form id="contactForm" method="POST" action="mail.php">
                         <div class="col-md-4">
-                            <input class="form-control" id="nombre" type="text" placeholder="Nombre"
+                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombre"
                                 autocapitalize="words" autocomplete="off" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" id="correo" type="email" placeholder="Email" required>
+                            <input class="form-control" id="correo" name="correo" type="email" placeholder="Email"
+                                required>
                         </div>
                         <div>
                             <span>Asunto: </span>
@@ -418,8 +419,8 @@
                             </select>
                         </div>
                         <div class="col-sm-12">
-                            <textarea class="form-control" id="message" type="text" placeholder="Tu mensaje"
-                                required></textarea>
+                            <textarea class="form-control" id="message" name="mensaje" type="text"
+                                placeholder="Tu mensaje" required></textarea>
                         </div>
                         <!-- ENVIAR MENSAJE DE EXITO -->
                         <!-- <div class="d-none" id="submitSuccessMessage">
