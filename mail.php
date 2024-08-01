@@ -31,7 +31,7 @@ $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
 // Enviar el correo
-$respuesta = mail('se_hereu@yahoo.com.ar', "Mensaje de Portfolio: $asunto", $mensaje, $headers);
+$respuesta = mail('', "Mensaje de Portfolio: $asunto", $mensaje, $headers);
 
 if ($respuesta) {
     echo 'Correo enviado exitosamente.';
