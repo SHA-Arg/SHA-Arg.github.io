@@ -1,25 +1,23 @@
-// Init EmailJS
-(function () {
-	// https://dashboard.emailjs.com/admin/account
-	emailjs.init({
-		publicKey: "2fbjOfKN244DrH5T2",
-	});
-})();
+const btn = document.getElementById("button");
 
-// Add event listener to the form
-window.onload = function () {
-	document
-		.getElementById("contact-form")
-		.addEventListener("submit", function (event) {
-			event.preventDefault();
-			// these IDs from the previous steps
-			emailjs.sendForm("contact_service", "contact_form", this).then(
-				() => {
-					console.log("SUCCESS!");
-				},
-				(error) => {
-					console.log("FAILED...", error);
-				}
-			);
-		});
-};
+document.getElementById("form").addEventListener("submit", function (event) {
+	event.preventDefault();
+
+	btn.value = "Sending...";
+
+	const serviceID = "default_service";
+	const templateID = "template_a9gh56k";
+
+	emailjs.sendForm(serviceID, templateID, this).then(
+		() => {
+			btn.value = "Send Email";
+			// agregar alerta de envio exitoso con div y limpiar campos
+			alert("Mensaje enviado correctamente");
+			document.getElementById("form").reset();
+		},
+		(err) => {
+			btn.value = "Send Email";
+			alert(JSON.stringify(err));
+		}
+	);
+});

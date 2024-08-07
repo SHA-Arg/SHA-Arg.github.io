@@ -25,7 +25,9 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript" src="mail.js"></script>
+    <script type="text/javascript">
+        emailjs.init('2fbjOfKN244DrH5T2')
+    </script>
 </head>
 
 <body>
@@ -33,7 +35,7 @@
     <div id="top" class="hero background-overlay">
         <div class="hero-content">
             <h1>Soy Sebastian Hereñu Amaral</S></h1>
-            <p class="hero-job"><span>DESARROLLADOR FULLSTACK</span></p>
+            <p class="hero-job"><span>PROGRAMADOR</span></p>
         </div>
         <div class="hero-arrow page-scroll home-arrow-down">
             <a class="" href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
@@ -402,42 +404,22 @@
                 <h2>CONTACTAME</h2>
                 <p class="section-subtitle"><span>Aqui estoy</span></p>
                 <div class="row">
-                    <form id="contact-form" method="POST">
+                    <form id="form">
                         <div class="col-md-4">
-                            <input class="form-control" name="user_name" id="nombre" type="text" placeholder="Nombre"
+                            <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Nombre"
                                 autocapitalize="words" autocomplete="off" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" id="correo" name="user_email" type="email" placeholder="Email"
+                            <input class="form-control" type="text" name="email_id" id="email_id" placeholder="Email"
                                 required>
                         </div>
-                        <div>
-                            <span>Asunto: </span>
-                            <select name="asunto" id="">
-                                <option value="Consulta">Consulta</option>
-                                <option value="Sugerencia">Sugerencia</option>
-                                <option value="Empleo">Empleo</option>
-                                <option value="Otro">Otro</option>
-                            </select>
-                        </div>
                         <div class="col-sm-12">
-                            <textarea class="form-control" id="message" name="message" type="text"
+                            <textarea class="form-control" type="text" name="message" id="message"
                                 placeholder="Tu mensaje" required></textarea>
                         </div>
-                        <!-- ENVIAR MENSAJE DE EXITO -->
-                        <!-- <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Envío de formulario exitoso!</div>
-                            </div>
-                        </div> -->
-                        <!-- ENVIAR MENSAJE DE ERROR -->
-                        <!-- <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div> -->
-
                         <div class="col-sm-12">
-                            <button class="btn btn-inverted" id="submitButton" type="submit"
-                                value="Send">ENVIAR</button>
+                            <button class="btn btn-inverted" type="submit" id="button"
+                                value="Send Email">ENVIAR</button>
                         </div>
                     </form>
                 </div>
