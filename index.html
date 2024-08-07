@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="mail.js"></script>
 </head>
 
 <body>
@@ -400,13 +402,13 @@
                 <h2>CONTACTAME</h2>
                 <p class="section-subtitle"><span>Aqui estoy</span></p>
                 <div class="row">
-                    <form id="contactForm" method="POST" action="mail.php">
+                    <form id="contact-form" method="POST">
                         <div class="col-md-4">
-                            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombre"
+                            <input class="form-control" name="user_name" id="nombre" type="text" placeholder="Nombre"
                                 autocapitalize="words" autocomplete="off" required>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" id="correo" name="correo" type="email" placeholder="Email"
+                            <input class="form-control" id="correo" name="user_email" type="email" placeholder="Email"
                                 required>
                         </div>
                         <div>
@@ -419,7 +421,7 @@
                             </select>
                         </div>
                         <div class="col-sm-12">
-                            <textarea class="form-control" id="message" name="mensaje" type="text"
+                            <textarea class="form-control" id="message" name="message" type="text"
                                 placeholder="Tu mensaje" required></textarea>
                         </div>
                         <!-- ENVIAR MENSAJE DE EXITO -->
@@ -434,7 +436,8 @@
                         </div> -->
 
                         <div class="col-sm-12">
-                            <button class="btn btn-inverted" id="submitButton" type="submit">ENVIAR</button>
+                            <button class="btn btn-inverted" id="submitButton" type="submit"
+                                value="Send">ENVIAR</button>
                         </div>
                     </form>
                 </div>
