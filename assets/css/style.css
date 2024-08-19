@@ -34,6 +34,7 @@ body {
 	font-family: "Sedan", serif;
 	font-weight: 400;
 	font-style: normal;
+	background-image: url(../img/bg.jpeg);
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -323,23 +324,24 @@ body {
 
 /* Navigation */
 .site-navigation {
-	background-color: #555;
+	background-color: #6057da;
 }
 
 .site-navigation.affix {
 	top: 0;
 	left: 0;
 	right: 0;
+	height: 38px;
 	width: 100%;
 	z-index: 1005;
 }
 
 .site-navigation .navbar-nav {
-	padding-top: 23px;
+	padding-top: 13px;
 }
 
 .site-navigation .navbar-nav > li > a {
-	padding: 0px 3px 21px;
+	padding: 0px 3px 2px;
 	font-size: 14px;
 	line-height: 14px;
 	color: #ffffff;
@@ -364,7 +366,7 @@ body {
 .nav > li > a:hover,
 .nav > li.active > a {
 	background-color: transparent;
-	border-color: #ffffff;
+	border-color: #9510af;
 }
 
 .nav > li > a:focus {
@@ -396,7 +398,7 @@ body {
 	}
 	.site-navigation .navbar-toggle {
 		margin: 0 5px 0 0;
-		height: 60px;
+		height: 38px;
 		line-height: 60px;
 		border: 0;
 	}
@@ -607,7 +609,7 @@ body {
 /* SITEMAIN
 ================================================== */
 .site-main {
-	background-color: #ffffff;
+	background-image: url(../img/bg.jpeg);
 	z-index: 1;
 }
 
@@ -633,7 +635,7 @@ body {
 	margin: 15px 0 0;
 	font-size: 16px;
 	line-height: 16px;
-	color: #666;
+	color: #ffffff;
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
@@ -670,7 +672,7 @@ body {
 .section-diff-title h2 {
 	margin: 0;
 	font-weight: 300;
-	color: #666;
+	color: #ffffff;
 }
 
 .section-diff-title p {
@@ -861,157 +863,6 @@ body {
 	}
 }
 
-/* Section: Skills */
-.section-skills {
-	background-color: #f6f6f6;
-}
-
-.section-skills h2 {
-	position: relative;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
-	font-size: 18px;
-	color: #000;
-	text-transform: uppercase;
-	text-align: left;
-}
-
-.section-skills h2:before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	display: block;
-	width: 40px;
-	height: 1px;
-	background-color: #000;
-}
-
-.section-skills p {
-	margin: 10px 0 0;
-}
-
-.progress-group p {
-	margin: 0;
-	text-transform: uppercase;
-}
-
-.progress-group + .progress-group {
-	margin-top: 20px;
-}
-
-.progress {
-	position: relative;
-	margin: 10px 0 0;
-	background-color: #666;
-	border-radius: 0;
-	height: 10px;
-	box-shadow: none;
-	overflow: visible;
-}
-
-.progress-bar {
-	position: relative;
-	background-color: #196fc2;
-	height: 10px;
-}
-
-.progress-bar:before {
-	content: "";
-	position: absolute;
-	right: 0;
-	top: -10px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 15px 20px 15px;
-	border-color: transparent transparent #196fc2 transparent;
-	z-index: 2;
-}
-
-.progress-bar:after {
-	content: "";
-	position: absolute;
-	right: -8px;
-	top: -10px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 15px 20px 15px;
-	border-color: transparent transparent #f6f6f6 transparent;
-	z-index: 1;
-}
-
-.progress-bar span {
-	width: 40px !important;
-	position: absolute;
-	top: -30px;
-	right: -7px;
-	color: #000;
-	z-index: 3;
-}
-
-.progressbar-back-text {
-	display: none;
-}
-
-@media only screen and (max-width: 767px) {
-	/* Section: Skills */
-	.section-skills .col-sm-6 + .col-sm-6 {
-		margin-top: 40px;
-	}
-	.section-skills h2 {
-		margin-bottom: 20px;
-		font-size: 18px;
-	}
-}
-
-/* Section: Counters */
-.site-section.section-counters {
-	padding-bottom: 0;
-}
-
-.site-section.section-counters .rectangle {
-	margin: 15px auto 10px;
-}
-
-.site-section.section-counters .rectangle i,
-.site-section.section-counters .rectangle span {
-	font-size: 18px;
-}
-
-.site-section.section-counters .rectangle i {
-	padding-bottom: 20px;
-}
-
-.site-section.section-counters .rectangle i + span {
-	padding-top: 20px;
-}
-
-.site-section.section-counters .row p {
-	margin: 30px 0 0;
-	text-transform: uppercase;
-}
-
-@media only screen and (max-width: 767px) {
-	/* Section: Counters */
-	.section-counters .col-sm-2:nth-child(n + 3) {
-		margin-top: 20px;
-	}
-	.section-counters .row p {
-		margin-top: 15px;
-	}
-}
-
-@media only screen and (max-width: 479px) {
-	/* Section: Counters */
-	.section-counters .col-sm-2 {
-		width: 100%;
-	}
-	.section-counters .col-sm-2:nth-child(n + 2) {
-		margin-top: 20px;
-	}
-}
-
 /* Section: Services */
 .section-services.site-section {
 	padding: 0;
@@ -1036,7 +887,7 @@ body {
 	position: relative;
 	min-height: 160px;
 	width: 100%;
-	margin: 70px 0 0;
+	margin: -10px 0 0;
 	bottom: 0;
 	left: 0;
 	border-bottom: 0;
@@ -1238,7 +1089,7 @@ body {
 		margin-top: 40px;
 	}
 	.section-services .nav-tabs {
-		margin-top: 30px;
+		margin-top: -15px;
 		min-height: 70px;
 	}
 	.section-services .nav-tabs .col-sm-fifth {
@@ -1945,11 +1796,13 @@ body {
 	width: 100%;
 	border-color: #dddddd;
 	color: #000;
+	background-color: #a44dec;
 }
 
 .section-contact .btn:hover {
 	color: #ffffff;
 	border-color: #196fc2;
+	background-color: #196fc2;
 }
 
 .form-control {
@@ -2011,13 +1864,13 @@ textarea.form-control {
 ================================================== */
 .site-footer .container-fluid {
 	position: relative;
-	padding: 70px 15px;
+	padding: 17px 15px;
 	text-align: center;
 	border-bottom: 1px solid #dddddd;
 }
 
 .site-footer .container {
-	padding: 70px 15px 100px;
+	padding: 4px 15px 100px;
 }
 
 .site-footer ul {
