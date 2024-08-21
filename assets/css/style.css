@@ -90,6 +90,7 @@ body {
 	font-family: "Varela", sans-serif;
 	font-size: 16px;
 	color: #ffffff;
+	width: 100vh;
 }
 
 /* 
@@ -330,7 +331,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 38px;
+	position: fixed;
 	width: 100%;
 	z-index: 1005;
 }
@@ -1801,7 +1802,6 @@ body {
 	border-bottom: 1px solid #dddddd;
 	box-shadow: none;
 	border-radius: 0;
-	-webkit-appearance: none;
 }
 
 .form-control:focus {
