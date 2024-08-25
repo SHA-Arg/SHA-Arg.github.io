@@ -12,7 +12,7 @@ $(
 			var windowsize = $window.width();
 			if (windowsize < 768) {
 				$(".nav a").on("click", function () {
-					$(".navbar-toggle").click(); //bootstrap 3.x by Richard
+					$(".navbar-toggle").click();
 				});
 			}
 		}
@@ -27,7 +27,7 @@ $(
 			offset: 10,
 		});
 
-		//jQuery for page scrolling feature - requires jQuery Easing plugin
+		// jQuery for page scrolling feature - requires jQuery Easing plugin
 		$(document).on("click", ".page-scroll a", function (event) {
 			var $anchor = $(this);
 			$("html, body")
@@ -40,6 +40,16 @@ $(
 					"easeInOutExpo"
 				);
 			event.preventDefault();
+		});
+
+		// Close dropdown menu when clicking outside
+		$(document).on("click", function (event) {
+			var clickover = $(event.target);
+			var $navbar = $(".navbar-collapse"); // Target your navbar
+			var _opened = $navbar.hasClass("in"); // Check if the menu is opened
+			if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+				$navbar.collapse("hide"); // Collapse the navbar
+			}
 		});
 
 		//Counters
@@ -58,33 +68,6 @@ $(
 				});
 			});
 		}
-
-		// Slick.js
-		$(".review-carousel").slick({
-			nextArrow:
-				'<button class="slick rectangle slick-next"><i class="fa fa-angle-right" aria-hidden="true"></button>',
-			prevArrow:
-				'<button class="slick rectangle slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></button>',
-		});
-
-		$(".clients-carousel").slick({
-			arrows: false,
-			slidesToShow: 5,
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 2,
-					},
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 1,
-					},
-				},
-			],
-		});
 
 		//shuffle.js
 		var shuffleme = (function ($) {

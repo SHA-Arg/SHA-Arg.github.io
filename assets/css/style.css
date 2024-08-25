@@ -7,6 +7,11 @@
 
 /* CUSTOM RESETS
 ================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 a,
 button {
 	-webkit-transition: all 0.25s ease-in-out;
@@ -25,18 +30,27 @@ a:focus {
 
 /* LAYOUT
 ================================================== */
-html,
+
+html {
+	overflow-x: hidden;
+}
+
 body {
 	width: 100%;
-	height: 100%;
+	font-family: "Varela", sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #ffffff;
 	margin: 0;
 	padding: 0;
 	font-family: "Sedan", serif;
 	font-weight: 400;
 	font-style: normal;
-	background-image: url(../img/bg.jpeg);
+	background-image: none;
 	color: #ffffff;
 }
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -337,7 +351,7 @@ body {
 }
 
 .site-navigation .navbar-nav {
-	padding-top: 13px;
+	padding-top: 23px;
 }
 
 .site-navigation .navbar-nav > li > a {
@@ -444,7 +458,7 @@ body {
 ================================================== */
 .hero {
 	background: url(../img/hero.jpg) center no-repeat;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	display: table;
 	position: relative;
@@ -609,7 +623,10 @@ body {
 ================================================== */
 .site-main {
 	background-image: url(../img/bg.jpeg);
+	background-size: cover;
 	z-index: 1;
+	background-attachment: fixed;
+	position: relative;
 }
 
 /*
@@ -621,7 +638,7 @@ body {
 
 .site-section h2 {
 	font-family: "Varela", sans-serif;
-	margin: 0;
+	margin: 17;
 	font-size: 32px;
 	color: #196fc2;
 	text-align: center;
