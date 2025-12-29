@@ -38,10 +38,16 @@ Mi objetivo es integrarme profesionalmente al sector IT y aportar valor real a p
 
 **Intereses técnicos**
 
-- Automatización de procesos
 - Seguridad informática (fundamentos)
 - Desarrollo backend con Python
-- Buenas prácticas y código limpio
+- APIs REST (en aprendizaje)
+- Django (en formación)
+- Administración básica de sistemas Linux
+- Automatización con Bash y Python
+- Uso avanzado de terminal
+- Hardening básico de sistemas Linux
+- Buenas prácticas de seguridad
+- Análisis básico de vulnerabilidades
 
 ---
 
