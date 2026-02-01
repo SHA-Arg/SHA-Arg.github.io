@@ -10,6 +10,26 @@
 	--dark: #333;
 	--light: #ffffff;
 	--gray: #dddddd;
+	--fs-xs: 0.75rem;
+	--fs-sm: 0.875rem;
+	--fs-base: 1rem;
+	--fs-lg: 1.25rem;
+	--fs-xl: 1.75rem;
+	--fs-xxl: 2.5rem;
+	--space-xs: 0.5rem;
+	--space-sm: 1rem;
+	--space-md: 2rem;
+	--space-lg: 4rem;
+}
+
+h1 {
+	font-size: var(--fs-xxl);
+}
+h2 {
+	font-size: var(--fs-xl);
+}
+p {
+	font-size: var(--fs-base);
 }
 
 a,
@@ -86,8 +106,7 @@ body {
 /* 
  * Rectangle 
  */
-.rectangle,
-.big-rectangle {
+.rectangle {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -101,7 +120,6 @@ body {
 }
 
 .rectangle i,
-.big-rectangle img,
 .rectangle span,
 .rectangle img {
 	position: absolute;
@@ -113,67 +131,6 @@ body {
 	-moz-transform: translate(-50%, -50%) rotate(-45deg);
 	-o-transform: translate(-50%, -50%) rotate(-45deg);
 	-ms-transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.big-rectangle {
-	position: absolute;
-	right: auto;
-	top: 50%;
-	left: 50%;
-	margin: 0 auto;
-	width: 230px;
-	height: 230px;
-	background-color: #196fc2;
-	border: 0;
-	transform: translate(-50%, -50%) rotate(45deg);
-	-webkit-transform: translate(-50%, -50%) rotate(45deg);
-	-moz-transform: translate(-50%, -50%) rotate(45deg);
-	-o-transform: translate(-50%, -50%) rotate(45deg);
-	-ms-transform: translate(-50%, -50%) rotate(45deg);
-	-webkit-box-shadow: 10px 10px 0px 0px #dddddd;
-	-o-box-shadow: 10px 10px 0px 0px #dddddd;
-	-moz-box-shadow: 10px 10px 0px 0px #dddddd;
-	box-shadow: 10px 10px 0px 0px #dddddd;
-}
-
-.medium-rectangle {
-	width: 75px;
-	height: 75px;
-}
-
-/*
- * Social Network
- */
-.social-icons.small {
-	margin: 50px auto 0;
-}
-
-.social-icons.small .rectangle {
-	margin: 0 4px;
-	width: 30px;
-	height: 30px;
-	color: #fff;
-}
-
-.social-icons.small .rectangle i {
-	font-size: 14px;
-	-webkit-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-}
-
-.social-icons.small .rectangle:hover {
-	background-color: #fff;
-}
-
-.social-icons.small .rectangle:hover i {
-	color: #196fc0;
-}
-
-.social-icons .rectangle {
-	box-shadow: none;
-	display: inline-block;
 }
 
 /* Image responsive */
@@ -470,127 +427,6 @@ body {
 	position: relative;
 	font-family: "Varela", sans-serif;
 	margin: 15px 0 0;
-	font-size: 16px;
-	line-height: 16px;
-	color: #ffffff;
-	letter-spacing: 2px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.section-subtitle span {
-	position: relative;
-}
-
-.section-subtitle span:before,
-.section-subtitle span:after {
-	display: inline-block;
-	content: "";
-	height: 1px;
-	background-color: #666;
-	width: 20px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-}
-
-.section-subtitle span:before {
-	left: -30px;
-}
-
-.section-subtitle span:after {
-	right: -30px;
-}
-
-.section-diff-title h2 {
-	margin: 0;
-	font-weight: 300;
-	color: #ffffff;
-}
-
-.section-diff-title p {
-	position: relative;
-	font-family: "Varela", sans-serif;
-	margin: 60px 0 0;
-}
-
-.section-diff-title p:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: -30px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	height: 1px;
-	width: 50px;
-	background-color: #666;
-}
-
-@media only screen and (max-width: 991px) {
-	/* Sections */
-	.site-section {
-		padding: 80px 0;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	/* Sections */
-	.site-section {
-		padding: 60px 0;
-	}
-	.site-section h2 {
-		font-size: 24px;
-	}
-	.section-subtitle span {
-		display: inline-block;
-		max-width: 230px;
-		font-size: 14px;
-	}
-}
-
-.main-proyecto {
-	position: relative;
-	padding: 35px 0;
-	min-height: 180px;
-}
-
-.main-proyecto .rectangle {
-	position: absolute;
-	right: 5px;
-	top: 50%;
-	transform: translateY(-50%) rotate(45deg);
-	-webkit-transform: translateY(-50%) rotate(45deg);
-	-moz-transform: translateY(-50%) rotate(45deg);
-	-o-transform: translateY(-50%) rotate(45deg);
-	-ms-transform: translateY(-50%) rotate(45deg);
-}
-
-.main-proyecto.text-right {
-	padding-right: 90px;
-}
-
-.main-proyecto.text-left {
-	padding-left: 90px;
-}
-
-.main-proyecto.text-left .rectangle {
-	right: auto;
-	left: 5px;
-}
-
-.main-proyecto h3 {
-	margin: 0;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.main-proyecto p {
 	margin: 25px 0 0;
 	font-size: 12px;
 }
