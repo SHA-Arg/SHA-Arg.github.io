@@ -14,7 +14,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
     <link rel="manifest" href="assets/img/manifest.json">
     <meta name="theme-color" content="#ffffff">
@@ -68,8 +68,6 @@
 
             <div class="container">
                 <div class="navbar-header page-scroll">
-                    <img src="/assets/img/moon.png" alt="Logo personal" style="width: 50px">
-
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#portfolio-perfect-collapse" aria-expanded="false"
                         aria-label="Abrir menú de navegación">
@@ -517,24 +515,31 @@
         <!-- Contacto -->
         <section class="site-section section-contact" id="contact">
             <div class="container">
-                <h2>CONTACTAME</h2>
-                <div class="row">
+                <h2>Contactame</h2>
+                <p class="section-subtitle"><span>Trabajemos juntos</span></p>
+                <div class="contact-form-card">
                     <form id="form">
-                        <div class="col-md-6 col-xs-12">
-                            <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Nombre"
-                                autocapitalize="words" autocomplete="off" required>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <input class="form-control" type="email" name="email_id" id="email_id" placeholder="Email"
-                                required>
-                        </div>
-                        <div class="col-xs-12">
-                            <textarea class="form-control" name="message" id="message"
-                                placeholder="Tu mensaje" required></textarea>
-                        </div>
-                        <div class="col-xs-12">
-                            <button class="btn btn-inverted" type="submit" id="button"
-                                value="Send Email">ENVIAR</button>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <input class="form-control" type="text" name="from_name" id="from_name" placeholder="Nombre"
+                                    autocapitalize="words" autocomplete="off" required>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <input class="form-control" type="email" name="email_id" id="email_id" placeholder="Email"
+                                    required>
+                            </div>
+                            <div class="col-xs-12">
+                                <textarea class="form-control" name="message" id="message"
+                                    placeholder="Tu mensaje" required></textarea>
+                            </div>
+                            <!-- Honeypot anti-spam (hidden, bots fill it) -->
+                            <div class="col-xs-12" aria-hidden="true" style="display:none">
+                                <input type="text" name="_honeypot" tabindex="-1" autocomplete="off">
+                            </div>
+                            <div class="col-xs-12">
+                                <button class="btn" type="submit" id="button">Enviar mensaje</button>
+                                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+                            </div>
                         </div>
                     </form>
                 </div>

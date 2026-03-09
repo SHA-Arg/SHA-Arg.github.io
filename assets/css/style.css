@@ -56,11 +56,15 @@ html {
 }
 
 body {
-	font-family: "Varela", sans-serif;
+	font-family: "Inter", system-ui, -apple-system, sans-serif;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 1.6;
 	background-color: var(--light);
 	color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Space Grotesk", sans-serif;
 }
 section[id] {
 	scroll-margin-top: 80px;
@@ -81,7 +85,7 @@ section[id] {
  * Button
  */
 .btn {
-	font-family: "Varela", sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	background-color: var(--primary);
 	padding: 0 15px;
 	color: var(--light);
@@ -100,7 +104,7 @@ section[id] {
  * texto acerca de mi
  */
 .text-acerca {
-	font-family: "Varela", sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	font-size: 16px;
 	color: var(--light);
 	width: 100%;
@@ -173,7 +177,7 @@ section[id] {
 
 .site-logo a {
 	position: relative;
-	font-family: "Varela", sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 	display: inline-block;
 	margin-top: 17px;
 	font-size: 26px;
@@ -221,7 +225,10 @@ section[id] {
 
 .site-navigation .navbar-nav > li > a {
 	padding: 0px 3px 2px;
-	font-size: 14px;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
 	line-height: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -462,20 +469,40 @@ section[id] {
 }
 
 .site-section h2 {
-	font-family: "Varela", sans-serif;
-	margin: 17;
-	font-size: 32px;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
 	color: var(--primary);
 	text-align: center;
-	text-transform: uppercase;
+	letter-spacing: -0.5px;
+	position: relative;
+	padding-bottom: 18px;
+	margin: 0 0 0;
+	text-transform: none;
+}
+
+.site-section h2::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 44px;
+	height: 3px;
+	background: var(--primary);
+	border-radius: 2px;
 }
 
 .section-subtitle {
 	position: relative;
-	font-family: "Varela", sans-serif;
-	margin: 15px 0 0;
-	margin: 25px 0 0;
-	font-size: 12px;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #94a3b8;
+	text-align: center;
+	margin: 22px 0 0;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1362,57 +1389,138 @@ section[id] {
 }
 
 /* Section: Contact */
+.section-contact {
+	background-color: #0a1628;
+}
+
+.section-contact h2,
+.section-contact .section-subtitle {
+	color: var(--primary);
+}
+
+.section-contact .section-subtitle {
+	color: #64748b;
+}
+
 .section-contact .container {
-	max-width: 770px;
+	max-width: 680px;
 }
 
-.section-contact .container form {
-	margin-top: 70px;
+.contact-form-card {
+	margin-top: 48px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 40px;
 }
 
-.section-contact .btn {
-	margin-top: 50px;
-	width: 100%;
-	border-color: #dddddd;
-	color: #000;
-	background-color: var(--primary);
+.contact-form-card .row {
+	margin: 0;
 }
 
-.section-contact .btn:hover {
-	color: #ffffff;
-	border-color: var(--primary);
-	background-color: var(--primary);
+.contact-form-card [class*="col-"] {
+	padding: 0 8px 0 8px;
+}
+
+.form-group-field {
+	position: relative;
+	margin-bottom: 20px;
 }
 
 .form-control {
-	border: 0;
-	border-bottom: 1px solid #dddddd;
+	font-family: "Inter", system-ui, sans-serif;
+	font-size: 14px;
+	color: #e2e8f0;
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 14px 18px;
+	width: 100%;
 	box-shadow: none;
-	border-radius: 0;
+	transition: border-color 0.25s ease, background-color 0.25s ease;
+	height: auto;
+}
+
+.form-control::placeholder {
+	color: #475569;
+	font-size: 14px;
 }
 
 .form-control:focus {
+	outline: none;
 	box-shadow: none;
-	border-bottom-color: var(--primary);
+	border-color: var(--primary);
+	background-color: rgba(14, 165, 233, 0.06);
 }
 
 textarea.form-control {
-	margin-top: 50px;
-	min-height: 150px;
+	min-height: 140px;
 	resize: none;
+	margin-top: 0;
+}
+
+.section-contact .col-md-6,
+.section-contact .col-xs-12 {
+	margin-bottom: 20px;
+}
+
+.section-contact .btn {
+	margin-top: 8px;
+	width: 100%;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: linear-gradient(135deg, var(--primary), #0284c7);
+	border: none;
+	border-radius: 8px;
+	height: 52px;
+	line-height: 52px;
+	padding: 0 24px;
+	transition: opacity 0.25s ease, transform 0.2s ease;
+}
+
+.section-contact .btn:hover {
+	opacity: 0.88;
+	transform: translateY(-1px);
+	color: #ffffff;
+	background: linear-gradient(135deg, var(--primary), #0284c7);
+	border: none;
+}
+
+.section-contact .btn:disabled {
+	opacity: 0.55;
+	transform: none;
+	cursor: not-allowed;
+}
+
+.form-feedback {
+	margin-top: 14px;
+	font-size: 13px;
+	font-family: "Inter", sans-serif;
+	letter-spacing: 0.2px;
+	min-height: 20px;
+}
+
+.form-feedback--success {
+	color: #4ade80;
+}
+
+.form-feedback--error {
+	color: #f87171;
 }
 
 @media only screen and (max-width: 767px) {
 	/* Section: Contact */
-	.section-contact .container form {
+	.contact-form-card {
+		padding: 24px 20px;
 		margin-top: 30px;
 	}
-	.section-contact .btn {
-		margin-top: 30px;
-	}
-	.form-control,
-	textarea.form-control {
-		margin-top: 15px;
+	.section-contact .col-md-6,
+	.section-contact .col-xs-12 {
+		margin-bottom: 14px;
 	}
 
 	/* Fix background-attachment fixed for iOS/mobile */
@@ -1850,21 +1958,12 @@ body.dark-mode .estudios-recuadro .estudios-recuadro-front {
 }
 
 body.dark-mode .section-contact {
-	background-color: #060f1a;
+	background-color: #060a14;
 }
 
-body.dark-mode .form-control {
-	background-color: transparent;
-	color: #e0e0e0;
-	border-bottom-color: #444466;
-}
-
-body.dark-mode .form-control::placeholder {
-	color: #888888;
-}
-
-body.dark-mode .form-control:focus {
-	border-bottom-color: var(--primary);
+body.dark-mode .contact-form-card {
+	background: rgba(255, 255, 255, 0.02);
+	border-color: rgba(255, 255, 255, 0.06);
 }
 
 body.dark-mode .site-footer {
