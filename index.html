@@ -88,10 +88,12 @@
                         <li class="page-scroll"><a href="#proyectos">Proyectos</a></li>
                         <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
                         <li class="page-scroll"><a href="#contact">Contacto</a></li>
+                        <li class="nav-item-toggle">
+                            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Cambiar tema oscuro/claro">
+                                <i class="fa fa-moon-o" id="darkModeIcon"></i>
+                            </button>
+                        </li>
                     </ul>
-                    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Cambiar tema oscuro/claro">
-                        <i class="fa fa-moon-o" id="darkModeIcon"></i>
-                    </button>
 
                 </div>
             </div>
@@ -137,11 +139,8 @@
                                 primera oportunidad en el sector IT donde pueda seguir creciendo, aportar valor y
                                 consolidar mis conocimientos técnicos.</p>
                         </div>
-                        <h3>ESTUDIOS</h3>
-                        <div class="hero-arrow page-scroll home-arrow-down">
-                            <a href="#estudios" aria-label="Ir a sección Estudios">
-                                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                            </a>
+                        <div class="acerca-cta page-scroll">
+                            <a href="#habilidades" class="btn" aria-label="Ver mis habilidades">Ver mis habilidades</a>
                         </div>
                     </div>
                 </div>
@@ -322,33 +321,27 @@
                     <div class="carousel slide" id="proyectos-carousel">
                         <div class="carousel-indicators nav-tabs text-center">
                             <a data-target="#proyectos-carousel" href="#" data-slide-to="0" class="active">
-                                <div class="col-xs-4 col-sm-fifth">
-                                    <div class="proyecto">
-                                        <div class="rectangle">
-                                            <i class="fa fa-laptop" aria-hidden="true"></i>
-                                        </div>
-                                        <p class="hidden-xs">Diseño Web</p>
+                                <div class="proyecto">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
                                     </div>
+                                    <p>Diseño Web</p>
                                 </div>
                             </a>
                             <a data-target="#proyectos-carousel" href="#" data-slide-to="1">
-                                <div class="col-xs-4 col-sm-fifth">
-                                    <div class="proyecto">
-                                        <div class="rectangle">
-                                            <i class="fa fa-code" aria-hidden="true"></i>
-                                        </div>
-                                        <p class="hidden-xs">DESARROLLO</p>
+                                <div class="proyecto">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
                                     </div>
+                                    <p>Desarrollo</p>
                                 </div>
                             </a>
                             <a data-target="#proyectos-carousel" href="#" data-slide-to="2">
-                                <div class="col-xs-4 col-sm-fifth">
-                                    <div class="proyecto">
-                                        <div class="rectangle">
-                                            <i class="fa fa-mobile" aria-hidden="true"></i>
-                                        </div>
-                                        <p class="hidden-xs">app's</p>
+                                <div class="proyecto">
+                                    <div class="rectangle">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
                                     </div>
+                                    <p>Apps</p>
                                 </div>
                             </a>
                         </div>
@@ -670,6 +663,12 @@
 
     <!-- Easing JS -->
     <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS (portfolio grid) -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- CountTo JS (counters) -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
