@@ -84,7 +84,7 @@ $(
 					// instantiate the plugin
 					$grid.shuffle({
 						itemSelector: '[class*="col-"]',
-						group: Shuffle.ALL_ITEMS,
+						group: 'all',
 					});
 				},
 				// Set up button clicks
@@ -149,7 +149,7 @@ $(
 			};
 		})(jQuery);
 
-		if ($("#grid").length > 0) {
+		if ($("#grid").length > 0 && $.fn.shuffle) {
 			shuffleme.init(); //filter portfolio
 		}
 	})()

@@ -5,11 +5,11 @@
 }
 
 :root {
-	--primary: #196fc2;
-	--primary-hover: #298ce9;
-	--dark: #333;
+	--primary: #0ea5e9;
+	--primary-hover: #38bdf8;
+	--dark: #1e293b;
 	--light: #ffffff;
-	--gray: #dddddd;
+	--gray: #e2e8f0;
 	--fs-xs: 0.75rem;
 	--fs-sm: 0.875rem;
 	--fs-base: 1rem;
@@ -157,7 +157,7 @@ section[id] {
 	position: relative;
 	padding: 0 30px 0 15px;
 	height: 60px;
-	background-color: #004b91;
+	background-color: #0d1117;
 	z-index: 2;
 }
 
@@ -168,7 +168,7 @@ section[id] {
 	height: 100%;
 	top: 0;
 	right: 0;
-	background-color: #004b91;
+	background-color: #0d1117;
 }
 
 .site-logo a {
@@ -184,7 +184,7 @@ section[id] {
 
 /* Navigation */
 .site-navigation {
-	background-color: #6057da;
+	background-color: #0d1117;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -245,7 +245,7 @@ section[id] {
 .nav > li > a:hover,
 .nav > li.active > a {
 	background-color: transparent;
-	border-color: #9510af;
+	border-color: var(--primary);
 }
 
 .nav > li > a:focus {
@@ -297,7 +297,7 @@ section[id] {
 	}
 	.site-navigation .navbar-collapse {
 		position: relative;
-		background-color: #196fc0;
+		background-color: #0d1117;
 		z-index: 99;
 		text-align: center;
 		border-top: 0;
@@ -465,7 +465,7 @@ section[id] {
 	font-family: "Varela", sans-serif;
 	margin: 17;
 	font-size: 32px;
-	color: #196fc2;
+	color: var(--primary);
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -606,7 +606,7 @@ section[id] {
 /* Section:Projectos */
 .section-proyectos.site-section {
 	padding: 0;
-	background-color: #f6f6f6;
+	background-color: #0f172a;
 }
 
 .section-proyectos .container-fluid {
@@ -619,22 +619,14 @@ section[id] {
 }
 
 
-.section-proyectos .nav-tabs {
+.proyectos-tabs {
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
 	gap: 15px;
-	min-height: auto;
-	width: 100% !important;
+	width: 100%;
 	margin-top: 30px;
-	border-bottom: 0;
 	padding: 10px 0;
-	position: static !important;
-	left: auto !important;
-	right: auto !important;
-	bottom: auto !important;
-	margin-left: 0 !important;
-	z-index: auto;
 }
 
 .section-proyectos .carousel-inner {
@@ -684,8 +676,8 @@ section[id] {
 
 .section-proyectos .item-controls .carousel-control:hover,
 .section-proyectos .item-controls .carousel-control:focus {
-	background-color: #196fc2;
-	border-color: #196fc2;
+	background-color: var(--primary);
+	border-color: var(--primary);
 }
 
 .section-proyectos .item-controls .carousel-control:hover i,
@@ -776,46 +768,41 @@ section[id] {
 .item-controls .carousel-control i,
 .proyecto .rectangle,
 .proyecto p,
-.carousel-indicators .proyecto .rectangle i {
+.proyectos-tabs .proyecto .rectangle i {
 	-webkit-transition: all 0.15s ease-in-out;
 	-o-transition: all 0.15s ease-in-out;
 	-moz-transition: all 0.15s ease-in-out;
 	transition: all 0.15s ease-in-out;
 }
 
-.section-proyectos .carousel-indicators.nav-tabs > a {
+.proyectos-tabs > a {
 	display: flex;
 	flex: 0 0 auto;
 	text-decoration: none;
 }
 
-/* Hover: solo sobre el botón .proyecto */
-.carousel-indicators a:hover .proyecto {
+/* Hover sobre el botón .proyecto */
+.proyectos-tabs a:hover .proyecto {
 	border-color: var(--primary-hover);
-	background: rgba(41, 140, 233, 0.15);
+	background: rgba(14, 165, 233, 0.15);
 	color: #ffffff;
 }
 
-.carousel-indicators a:hover .proyecto .rectangle i,
-.carousel-indicators a:hover .proyecto p {
+.proyectos-tabs a:hover .proyecto .rectangle i,
+.proyectos-tabs a:hover .proyecto p {
 	color: #ffffff;
 }
 
-/* Active: botón seleccionado */
-.carousel-indicators .active .proyecto {
+/* Botón activo */
+.proyectos-tabs .active .proyecto {
 	border-color: var(--primary);
 	background-color: var(--primary);
 	color: #ffffff;
 }
 
-.carousel-indicators .active .proyecto .rectangle i,
-.carousel-indicators .active .proyecto p {
+.proyectos-tabs .active .proyecto .rectangle i,
+.proyectos-tabs .active .proyecto p {
 	color: #ffffff;
-}
-
-/* Eliminar triángulo indicador */
-.carousel-indicators .active .proyecto:after {
-	display: none;
 }
 
 @media only screen and (max-width: 991px) {
@@ -826,7 +813,7 @@ section[id] {
 	.section-proyectos .container-fluid + .container {
 		margin-top: 60px;
 	}
-	.section-proyectos .nav-tabs {
+	.proyectos-tabs {
 		margin-top: 50px;
 	}
 	.section-proyectos .carousel-inner {
@@ -848,7 +835,7 @@ section[id] {
 	.section-proyectos .container-fluid + .container {
 		margin-top: 40px;
 	}
-	.section-proyectos .nav-tabs {
+	.proyectos-tabs {
 		margin-top: 15px;
 		gap: 8px;
 	}
@@ -983,7 +970,7 @@ section[id] {
 .estudios-recuadro .estudios-recuadro-back {
 	padding: 0 20px;
 	display: table;
-	background: #196fc2;
+	background: var(--primary);
 	text-align: center;
 	color: #ffffff;
 	transform: rotateY(-180deg);
@@ -1062,7 +1049,7 @@ section[id] {
 	margin: 0;
 	border-top: 1px solid #f6f6f6;
 	border-right: 1px solid #f6f6f6;
-	border-bottom: 2px solid #196fc2;
+	border-bottom: 2px solid var(--primary);
 	height: 47px;
 }
 
@@ -1084,14 +1071,14 @@ section[id] {
 
 .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active {
-	background-color: #196fc2;
+	background-color: var(--primary);
 	color: #ffffff;
-	border-color: #196fc2;
+	border-color: var(--primary);
 }
 
 .portfolio-sorting li a:hover:after,
 .portfolio-sorting li a.active:after {
-	border-color: #196fc2;
+	border-color: var(--primary);
 }
 
 .portfolio-sorting li a:after,
@@ -1120,7 +1107,7 @@ section[id] {
 	height: 0;
 	border-style: solid;
 	border-width: 10px 10px 0 10px;
-	border-color: #196fc2 transparent transparent transparent;
+	border-color: var(--primary) transparent transparent transparent;
 	z-index: 99;
 }
 
@@ -1135,6 +1122,13 @@ section[id] {
 
 #grid {
 	margin-top: 40px;
+	overflow: hidden;
+}
+
+#grid::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 #grid .col-md-3 {
@@ -1143,6 +1137,7 @@ section[id] {
 
 .portfolio-item {
 	overflow: hidden;
+	position: relative;
 }
 
 .portfolio-item .portfolio-item-thumb {
@@ -1160,7 +1155,7 @@ section[id] {
 
 .portfolio-item .portfolio-item-thumb:after {
 	content: "";
-	background-color: #196fc2;
+	background-color: var(--primary);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -1245,8 +1240,8 @@ section[id] {
 }
 
 .portfolio-item:hover .portfolio-item-thumb .rectangle:hover {
-	background-color: #196fc2;
-	border-color: #196fc2;
+	background-color: var(--primary);
+	border-color: var(--primary);
 	color: #ffffff;
 }
 
@@ -1352,7 +1347,7 @@ section[id] {
 }
 
 .section-quote p span {
-	color: #196fc2;
+	color: var(--primary);
 }
 
 /* Sections background: Me */
@@ -1380,13 +1375,13 @@ section[id] {
 	width: 100%;
 	border-color: #dddddd;
 	color: #000;
-	background-color: #a44dec;
+	background-color: var(--primary);
 }
 
 .section-contact .btn:hover {
 	color: #ffffff;
-	border-color: #196fc2;
-	background-color: #196fc2;
+	border-color: var(--primary);
+	background-color: var(--primary);
 }
 
 .form-control {
@@ -1398,7 +1393,7 @@ section[id] {
 
 .form-control:focus {
 	box-shadow: none;
-	border-bottom-color: #196fc2;
+	border-bottom-color: var(--primary);
 }
 
 textarea.form-control {
@@ -1482,7 +1477,7 @@ textarea.form-control {
 }
 
 .site-footer ul a:hover {
-	color: #196fc2;
+	color: var(--primary);
 }
 
 .site-footer a {
@@ -1492,7 +1487,7 @@ textarea.form-control {
 }
 
 .site-footer a:hover {
-	color: #196fc2;
+	color: var(--primary);
 }
 
 .site-footer .rectangle {
@@ -1510,7 +1505,7 @@ textarea.form-control {
 }
 
 .site-footer .rectangle:hover {
-	background-color: #196fc2;
+	background-color: var(--primary);
 	color: #ffffff;
 }
 
@@ -1557,7 +1552,7 @@ textarea.form-control {
 	top: -20px;
 	height: 40px;
 	width: 40px;
-	background-color: #196fc2;
+	background-color: var(--primary);
 	color: #ffffff;
 	box-shadow: none;
 	border: 0;
@@ -1566,8 +1561,8 @@ textarea.form-control {
 
 .modal-header .rectangle:hover {
 	background-color: #ffffff;
-	color: #196fc2;
-	border-color: #196fc2;
+	color: var(--primary);
+	border-color: var(--primary);
 }
 
 .modal-header,
@@ -1581,8 +1576,8 @@ textarea.form-control {
 
 .modal-footer .btn:hover {
 	background-color: #ffffff;
-	color: #196fc2;
-	border-color: #196fc2;
+	color: var(--primary);
+	border-color: var(--primary);
 }
 
 .modal-content {
@@ -1668,7 +1663,7 @@ textarea.form-control {
 }
 
 .dark-mode-toggle:hover {
-	border-bottom-color: #9510af;
+	border-bottom-color: var(--primary);
 	color: #ffffff;
 	background: transparent;
 }
@@ -1709,7 +1704,7 @@ textarea.form-control {
 	background: var(--primary);
 	border-color: var(--primary);
 	transform: translateY(-6px);
-	box-shadow: 0 10px 30px rgba(25, 111, 194, 0.4);
+	box-shadow: 0 10px 30px rgba(14, 165, 233, 0.35);
 }
 
 .skill-card i {
@@ -1798,30 +1793,30 @@ textarea.form-control {
 /* DARK MODE
 ================================================== */
 body.dark-mode {
-	background-color: #0f0f1a;
+	background-color: #060f1a;
 	color: #e0e0e0;
 }
 
 body.dark-mode .site-navigation {
-	background-color: #1a1a2e;
+	background-color: #0d1117;
 }
 
 body.dark-mode .site-main {
 	background-image: none;
-	background-color: #0f0f1a;
+	background-color: #060f1a;
 }
 
 body.dark-mode .section-proyectos .container-fluid {
 	background-image: none;
-	background-color: #1a1a2e;
+	background-color: #0d1117;
 }
 
 body.dark-mode .section-proyectos.site-section {
-	background-color: #0f0f1a;
+	background-color: #060f1a;
 }
 
 body.dark-mode .site-section h2 {
-	color: #5ba7f5;
+	color: var(--primary-hover);
 }
 
 body.dark-mode .section-subtitle {
@@ -1838,7 +1833,7 @@ body.dark-mode .proyecto-info p {
 }
 
 body.dark-mode .section-portfolio {
-	background-color: #0f0f1a;
+	background-color: #060f1a;
 }
 
 body.dark-mode .portfolio-item .portfolio-info h3 {
@@ -1850,12 +1845,12 @@ body.dark-mode .portfolio-item .portfolio-info p {
 }
 
 body.dark-mode .estudios-recuadro .estudios-recuadro-front {
-	background-color: #1a1a2e;
+	background-color: #0d1117;
 	border-color: #333355;
 }
 
 body.dark-mode .section-contact {
-	background-color: #0f0f1a;
+	background-color: #060f1a;
 }
 
 body.dark-mode .form-control {
@@ -1869,11 +1864,11 @@ body.dark-mode .form-control::placeholder {
 }
 
 body.dark-mode .form-control:focus {
-	border-bottom-color: #5ba7f5;
+	border-bottom-color: var(--primary);
 }
 
 body.dark-mode .site-footer {
-	background-color: #1a1a2e;
+	background-color: #0d1117;
 }
 
 body.dark-mode .footer-copy,
