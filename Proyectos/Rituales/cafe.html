@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Café | Rituales</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- Botón de alternancia de modo claro/oscuro -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/oscuro">
+            <i class="fas fa-moon"></i>
+        </button>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rituales</a>
+        </div>
+    </nav>
+    <main class="catalogo-mundo">
+            <div style="margin: 1.5rem 0 0 1rem;">
+                <a href="index.html" class="btn btn-main">Volver al inicio</a>
+            </div>
+        <section class="page-section" id="coleccion">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Explora por universo</span>
+                    <h2>Categorías</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <a href="vinos.html" class="d-block p-4 bg-light text-dark rounded-2 shadow-sm text-center text-decoration-none transition-hover" style="transition:background 0.18s;">
+                            <i class="fa-solid fa-wine-glass fa-2x mb-2"></i>
+                            <h3 class="h5">Vinos</h3>
+                            <p class="mb-0">Tintos, blancos, rosados, espumantes y bodegas boutique.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="cafe.html" class="d-block p-4 bg-light text-dark rounded-2 shadow-sm text-center text-decoration-none transition-hover" style="transition:background 0.18s;">
+                            <i class="fa-solid fa-mug-hot fa-2x mb-2"></i>
+                            <h3 class="h5">Café</h3>
+                            <p class="mb-0">Grano, molido, cápsulas, métodos y tostados de origen.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="libros.html" class="d-block p-4 bg-light text-dark rounded-2 shadow-sm text-center text-decoration-none transition-hover" style="transition:background 0.18s;">
+                            <i class="fa-solid fa-book fa-2x mb-2"></i>
+                            <h3 class="h5">Libros</h3>
+                            <p class="mb-0">Ficción, no ficción, poesía y ediciones para regalar.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <a href="parafernalia.html" class="d-block p-4 bg-light text-dark rounded-2 shadow-sm text-center text-decoration-none transition-hover" style="transition:background 0.18s;">
+                            <i class="fa-solid fa-gift fa-2x mb-2"></i>
+                            <h3 class="h5">Parafernalia</h3>
+                            <p class="mb-0">Copas, tazas, prensa francesa, velas, separadores y más.</p>
+                        </a>
+                    </div>
+                </main>
+                <style>
+                .transition-hover:hover {
+                    background: #f8f3e9 !important;
+                    box-shadow: 0 4px 18px rgba(122,36,59,0.10) !important;
+                }
+                </style>
+                </div>
+            </div>
+        </section>
+        <section class="page-section catalog-section" id="catalogo">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Listo para vender</span>
+                    <h2>Café de especialidad</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="wine-card">
+                            <div class="wine-thumb coffee-thumb">Café</div>
+                            <div class="wine-card-body">
+                                <span class="wine-type">Blend de la casa</span>
+                                <h3>Andino 500g</h3>
+                                <p>Notas de cacao, avellana y acidez suave.</p>
+                                <div class="wine-card-footer">
+                                    <strong>$12.400</strong>
+                                    <a href="#contacto">Consultar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="wine-card">
+                            <div class="wine-thumb coffee-thumb-alt">Café</div>
+                            <div class="wine-card-body">
+                                <span class="wine-type">Método</span>
+                                <h3>Prensa Francesa 600ml</h3>
+                                <p>Extractor clásico para café con cuerpo y aroma pleno.</p>
+                                <div class="wine-card-footer">
+                                    <strong>$18.900</strong>
+                                    <a href="#contacto">Consultar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="wine-card">
+                            <div class="wine-thumb coffee-thumb">Café</div>
+                            <div class="wine-card-body">
+                                <span class="wine-type">Cápsulas</span>
+                                <h3>Pack x10 Intenso</h3>
+                                <p>Cápsulas compatibles, tueste oscuro, sabor intenso.</p>
+                                <div class="wine-card-footer">
+                                    <strong>$7.500</strong>
+                                    <a href="#contacto">Consultar</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="https://wa.me/5490000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <script>
+    // Alternancia de modo claro/oscuro
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    function setTheme(dark) {
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        themeToggle.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    }
+    // Estado inicial
+    let darkMode = localStorage.getItem('rituales-theme') === 'dark' || (prefersDark && !localStorage.getItem('rituales-theme'));
+    setTheme(darkMode);
+    themeToggle.onclick = function() {
+        darkMode = !darkMode;
+        setTheme(darkMode);
+        localStorage.setItem('rituales-theme', darkMode ? 'dark' : 'light');
+    };
+    </script>
+</body>
+</html>
