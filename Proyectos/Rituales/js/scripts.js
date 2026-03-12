@@ -8,6 +8,34 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
+    // Alternancia de modo claro/oscuro
+    // Alternancia de modo claro/oscuro
+    const themeToggle = document.getElementById('themeToggle');
+    // Aplica preferencia guardada al cargar
+    const savedTheme = localStorage.getItem('rituales-theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        if (themeToggle) {
+            themeToggle.querySelector('i').classList.remove('fa-moon');
+            themeToggle.querySelector('i').classList.add('fa-sun');
+        }
+    }
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            // Cambia el ícono
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('rituales-theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('rituales-theme', 'light');
+            }
+        });
+    }
 
     // Navbar shrink function
     var navbarShrink = function () {

@@ -1,3 +1,96 @@
+/* Modo oscuro */
+.dark-mode {
+	background-color: #232323 !important;
+	color: #f8f9fa !important;
+}
+
+.dark-mode .navbar,
+	background-color: #2c2c2c !important;
+	color: #f8f9fa !important;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.dark-mode .navbar-brand,
+.dark-mode .navbar-nav .nav-link {
+	color: #f8f9fa !important;
+}
+.dark-mode .btn,
+.dark-mode .wine-card,
+.dark-mode .bg-light {
+	background-color: #353535 !important;
+	color: #fff !important;
+	border: 1px solid #444 !important;
+}
+
+.dark-mode .wine-card h3,
+.dark-mode .wine-card h4,
+.dark-mode .wine-card h5,
+.dark-mode .wine-card h6,
+.dark-mode .wine-card p,
+.dark-mode .wine-card .card-title,
+.dark-mode .wine-card .card-text,
+.dark-mode .wine-card .section-head,
+.dark-mode .wine-card .eyebrow,
+.dark-mode .wine-card .wine-card-footer,
+.dark-mode .catalog-section h2,
+.dark-mode .catalog-section p,
+.dark-mode .catalog-section .section-head,
+.dark-mode .catalog-section .eyebrow {
+	color: #fff !important;
+	text-shadow: 0 1px 2px #222;
+}
+
+.dark-mode .wine-card .bg-light {
+	background-color: #444 !important;
+	color: #fff !important;
+}
+
+.dark-mode .wine-card .text-dark {
+	color: #fff !important;
+}
+
+.dark-mode .wine-card .card {
+	background-color: #353535 !important;
+	color: #fff !important;
+	border: 1px solid #444 !important;
+}
+
+.dark-mode .wine-card .card-title,
+.dark-mode .wine-card .card-text {
+	color: #fff !important;
+}
+.dark-mode .btn-main {
+	background-color: #1abc9c !important;
+	color: #fff !important;
+	box-shadow: 0 2px 8px rgba(26,188,156,0.18);
+}
+.dark-mode .btn-light {
+	background-color: #444 !important;
+	color: #fff !important;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.dark-mode .theme-toggle {
+	background: #444 !important;
+	color: #fff !important;
+	border: none;
+}
+
+.dark-mode .btn-main {
+	background-color: #1abc9c !important;
+	color: #fff !important;
+}
+
+.dark-mode .btn-light {
+	background-color: #444 !important;
+	color: #fff !important;
+}
+
+.dark-mode .wine-card-footer a {
+	color: #1abc9c !important;
+}
+
+.dark-mode .hero-glow {
+	background: rgba(26,188,156,0.08) !important;
+}
 @charset "UTF-8";
 /*
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
