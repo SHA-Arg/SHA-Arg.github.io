@@ -1,3 +1,12 @@
+// Flip card para habilidades
+$(document).ready(function () {
+	$(".flip-card").on("click", function () {
+		// Cierra todas las flip-cards
+		$(".flip-card.flipped").not(this).removeClass("flipped");
+		// Abre la actual
+		$(this).toggleClass("flipped");
+	});
+});
 $(
 	(function () {
 		// Navigation
